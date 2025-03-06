@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Keybinds for Websites",
+  "version": "1.0",
+  "description": "Set custom keybinds to specific websites.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}

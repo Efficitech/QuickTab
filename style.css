@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.keybind-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.keybind-row select {
+  width: 150px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.keybind-row input[type="url"] {
+  width: 100%;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.delete {
+  background-color: #f44336;
+}
+
+button.delete:hover {
+  background-color: #d32f2f;
+}
