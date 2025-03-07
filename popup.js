@@ -32,7 +32,8 @@ const createKeybindRow = (key = '', url = '') => {
 
   // Create delete button
   const deleteButton = document.createElement('button');
-  deleteButton.textContent = 'Delete';
+  deleteButton.textContent = 'X';
+  deleteButton.className = "delete"
   deleteButton.addEventListener('click', () => deleteKeybind(row, key));
 
   // Add the elements to the row
@@ -97,8 +98,7 @@ const deleteKeybind = (row, key) => {
 };
 
 // Load keybinds when popup is opened
-document.addEventListener('DOMContentLoaded', loadKeybinds);
-
+loadKeybinds()
 // Handle keydown event for triggering actions
 document.addEventListener('keydown', (event) => {
   if (event.altKey) {
